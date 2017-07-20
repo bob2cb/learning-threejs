@@ -33,7 +33,9 @@
 
         // create a render and set the size
         var renderer = new THREE.WebGLRenderer();
-        renderer.setClearColorHex();
+
+        //没有这个函数了
+        //renderer.setClearColorHex();
         renderer.setClearColor(new THREE.Color(0xEEEEEE));
         renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -43,7 +45,7 @@
 
         // create the ground plane
         var planeGeometry = new THREE.PlaneGeometry(60, 20);
-        var planeMaterial = new THREE.MeshBasicMaterial({color: 0xcccccc});
+        var planeMaterial = new THREE.MeshBasicMaterial({color: 0xccffcc});
         var plane = new THREE.Mesh(planeGeometry, planeMaterial);
 
         // rotate and position the plane
